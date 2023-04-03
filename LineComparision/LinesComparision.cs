@@ -31,13 +31,17 @@ namespace LineComparision
             x4 = Convert.ToInt32(Console.ReadLine());
             y4 = Convert.ToInt32(Console.ReadLine());
 
-            x = Math.Pow((x4 - x3), 2);
-            y = Math.Pow((y4 - y3), 2);
+            X = Math.Pow((x4 - x3), 2);
+            Y = Math.Pow((y4 - y3), 2);
             length1 = Math.Sqrt(X + Y);
             Console.WriteLine("Length of line2: " + length1);
             if (length > length1)
             {
                 Console.WriteLine("Line1 is grater: " + length);
+            }
+            else if (length == length1)
+            {
+                Console.WriteLine("Both lines are equal line1: {0} Line2: {1}", length, length1);
             }
             else
             {
