@@ -47,6 +47,7 @@ namespace LineComparision
             {
                 Console.WriteLine("Line2 is greater: " + length1);
             }
+            Console.WriteLine("\nComapre of lengths" + length.CompareTo(length1));
         }
     }
 }
